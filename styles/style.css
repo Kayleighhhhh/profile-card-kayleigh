@@ -67,11 +67,11 @@ button.profile-card-example-button svg {
   position: absolute;
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
-  stroke: #4e54c8;
+  stroke: #fff;
   transition-delay: .25s;
 }
 button.profile-card-example-button:focus svg {
-  stroke: rgba(0,239,255,1);
+  stroke: #ffff;
 }
 button.profile-card-example-button svg:nth-of-type(2) {
   opacity: 0;
