@@ -27,7 +27,6 @@ body {
   translate: 0 -700px;
   position: relative;
   z-index: 1;
-
 }
 
 .foto {
@@ -47,7 +46,6 @@ body {
   font-size: 70px;
   translate: 475px 40px;
   position: relative;
-  
 }
 
 .bday {
@@ -90,7 +88,7 @@ body {
   height: 200px;
   position: relative;
   z-index:5;
-  translate: 0 -1050px;
+  translate: 0 -750px;
   margin-left: -5px;
 }
 
@@ -108,43 +106,45 @@ body {
 .layer1 {
   z-index:4;
   background-color: #522a1a;
-  translate: 0 -1200px;
+  translate: 0 -900px;
   border: 5px solid black;
 }
 
 .layer2 {
   z-index:3;
   background-color:#673824;
-  translate: 0 -1250px;
+  translate: 0 -950px;
   border: 5px solid black;
 }
 
 .layer3 {
   z-index:2;
   background-color: #522a1a;
-  translate: 0 -1300px;
+  translate: 0 -1000px;
   border: 5px solid black;
 }
 
-.candles {
-  color: black;
+.candle {
+  color: white;
   text-align: center;
-  translate: 0 -870px;
+  translate: 0 -570px;
   z-index: 6;
   font-size: 80px;
   font-family: Calinastiya;
   font-weight: bold;
 }
 
-.vlam {
-   text-align: center;
-    translate: 0 -755px;
-    z-index: 6;
+.flame {
+  text-align: center;
+  translate: 165px -540px;
+  z-index: 6;
+  opacity: 0;
+  position:absolute
 }
 
-.lighter {
-  translate: 170px -300px;
-  z-index: 7;
-  position: relative;
+.candle.lit .flame {
+  opacity: 1;
 }
+
+
 
