@@ -6,170 +6,145 @@ html:has(.profile-card-example) {
   height: 100vh;
 }
 
-body:has(.profile-card-example) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: open sans;
-  color: #fff;
+@font-face {
+  font-family: Calinastiya;
+  src: url('../assets/Calinastiya\ demo.ttf');
 }
 
-article.profile-card-example {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 50vw;
-  max-width: 25em;
-  min-width: 20em;
-  border-radius: 1rem;
-  background: #ff99be;
-  background: linear-gradient(0deg, #ff99be 40%, #7b173b 100%);
-  box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
-  transition: .25s;
+body {
+  background-color: black;
 }
 
-header.profile-card-example-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-
-  /* Je kunt selectors nesten! */
-  h1 {
-    margin: 2rem 0 1rem;
-    color: #fff;
-  }
-
-}
-
-button.profile-card-example-button {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: .25rem;
-  border: none;
-  border-radius: 50%;
-  background: #bd8b9d;
-  transform: scale(.8);
-  transition: .25s;
-}
-button.profile-card-example-button:focus {
-  outline: none;
-  background: #fff;
-}
-button.profile-card-example-button svg {
-  position: absolute;
-  top: calc(1.25rem - 12px);
-  left: calc(1.25rem - 12px);
-  stroke: #fff;
-  transition-delay: .25s;
-}
-button.profile-card-example-button:focus svg {
-  stroke: #fff;
-}
-button.profile-card-example-button svg:nth-of-type(2) {
-  opacity: 0;
-  transition-delay: 0ms;
-}
-
-.profile-card-example-img {
-  position: relative;
-  top: 2rem;
-  width: 10em;
-  height: auto;
+.shape {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  margin-right: auto;
+  margin-left: auto;
   border: 5px solid #fff;
-  border-radius: 10em;
-  box-shadow: 0 0 2px 2px #fff;
-  transition: .25s .15s;
+  border-radius: 40px;
+  box-shadow: 0 0 50px 5px #fff;
+  translate: 0 -700px;
+  position: relative;
+  z-index: 1;
+
 }
 
-.profile-card-example-dl {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "html-dd css-dd js-dd"
-    "html-dt css-dt js-dt"
-    ;
-  justify-items: center;
-  align-items: start;
-  width: 100%;
-  margin-top: -3rem;
-  margin-bottom: 0;
-  padding: 5rem 0 3rem;
-  text-align: center;
+.foto {
+  position: relative;
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  translate: 820px -290px;
+  z-index: 2;
+}
+
+.naam {
+  z-index: 2;
+  color: white;
+  font-family: Calinastiya;
+  font-size: 70px;
+  translate: 475px 40px;
+  position: relative;
   
-
-  dt {
-    margin-top: .25rem;
-    padding-top: .25rem;
-    border-top: 1px solid #fff;
-    font-weight: bold;
-    &:nth-of-type(1) {
-      grid-area: html-dt;
-    }
-    &:nth-of-type(2) {
-      grid-area: css-dt;
-      transform: translateY(1rem);
-    }
-    &:nth-of-type(3) {
-      grid-area: js-dt;
-    }
-  }
-
-  dd {
-    margin: 0;
-    padding-left: .3rem;
-    transition: .25s .3s;
-    &:nth-of-type(2) {
-      transform: translateY(1rem);
-    }
-  }
 }
 
-
-.profile-card-example p {
-  margin: 0;
+.bday {
+  z-index: 2;
+  color: white;
+  font-family: Calinastiya;
+  font-size: 50px;
+  translate: 475px -10px;
+  position: relative;
 }
 
-.profile-card-example > p {
-  width: 100%;
-  margin-top: 0;
-  padding: 3rem 2rem;
-  border-radius: 0 0 1rem 1rem;
+.woonplaats {
+  z-index: 2;
+  color: white;
+  font-family: Calinastiya;
+  font-size: 50px;
+  translate: 475px -60px;
+  position: relative;
+}
+
+.quote {
+  z-index: 2;
+  color: white;
+  font-family: Calinastiya;
+  font-size: 50px;
+  translate: 475px -390px;
+  position: relative;
+}
+
+.cake {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 550px;
+  margin:50px auto;
+}
+
+.icing {
+  width: 560px;
+  height: 200px;
+  position: relative;
+  z-index:5;
+  translate: 0 -1050px;
+  margin-left: -5px;
+}
+
+.layer {
+  position:relative;
+  width: 550px;
+  border-radius: 50% / 20%;
+  height:175px;
+  translate:0 0px;
+  z-index:1;
+  background-color: blue;
+  border: 2px solid black;
+}
+
+.layer1 {
+  z-index:4;
+  background-color: #522a1a;
+  translate: 0 -1200px;
+  border: 5px solid black;
+}
+
+.layer2 {
+  z-index:3;
+  background-color:#673824;
+  translate: 0 -1250px;
+  border: 5px solid black;
+}
+
+.layer3 {
+  z-index:2;
+  background-color: #522a1a;
+  translate: 0 -1300px;
+  border: 5px solid black;
+}
+
+.candles {
+  color: black;
   text-align: center;
-  background: rgba(255,255,255, 0.5);
+  translate: 0 -870px;
+  z-index: 6;
+  font-size: 80px;
+  font-family: Calinastiya;
+  font-weight: bold;
 }
 
-/* Deze styles zijn van toepassing als je op de knop klikt */
-body.is-expanded {
-  font-size: 1.15em;
+.vlam {
+   text-align: center;
+    translate: 0 -755px;
+    z-index: 6;
 }
 
-body.is-expanded .profile-card-example {
-  width: 60vw;
-  max-width: 60vw;
+.lighter {
+  translate: 170px -300px;
+  z-index: 7;
+  position: relative;
 }
 
-body.is-expanded .profile-card-example-button svg:first-of-type {
-  opacity: 0;
-  transition-delay: 0ms;
-}
-
-body.is-expanded .profile-card-example-button svg:nth-of-type(2) {
-  opacity: 1;
-  transition-delay: .25s;
-}
-
-body.is-expanded .profile-card-example-dl dd {
-  font-size: 1.75em;
-}
-
-body.is-expanded .profile-card-example-img {
-  width: 15em;
-}
