@@ -11,6 +11,11 @@ html:has(.profile-card-example) {
   src: url('../assets/Calinastiya\ demo.ttf');
 }
 
+@font-face {
+  font-family: Milven;
+  src: url('../assets/Milven-Regular.otf');
+}
+
 body {
   background-color: black;
 }
@@ -40,27 +45,27 @@ body {
 
 .foto {
   position: relative;
-  width: 200px;
+  width: 170px;
   height: auto;
   border: 1px solid black;
   border-radius: 10px;
-  translate: 820px -290px;
+  translate: 850px -270px;
   z-index: 2;
 }
 
 .naam {
   z-index: 2;
   color: white;
-  font-family: Calinastiya;
-  font-size: 70px;
-  translate: 475px 40px;
+  font-family: Milven;
+  font-size: 55px;
+  translate: 475px 50px;
   position: relative;
 }
 
 .bday {
   z-index: 2;
   color: white;
-  font-family: Calinastiya;
+  font-family: Milven;
   font-size: 50px;
   translate: 475px -10px;
   position: relative;
@@ -69,18 +74,18 @@ body {
 .woonplaats {
   z-index: 2;
   color: white;
-  font-family: Calinastiya;
+  font-family: Milven;
   font-size: 50px;
-  translate: 475px -60px;
+  translate: 475px -65px;
   position: relative;
 }
 
 .quote {
   z-index: 2;
   color: white;
-  font-family: Calinastiya;
+  font-family: Milven;
   font-size: 50px;
-  translate: 475px -390px;
+  translate: 475px -370px;
   position: relative;
 }
 
@@ -136,10 +141,10 @@ body {
 .candle {
   color: white;
   text-align: center;
-  translate: 200px -640px;
+  translate: 180px -640px;
   z-index: 6;
   font-size: 80px;
-  font-family: Calinastiya;
+  font-family: Milven;
   font-weight: bold;
   cursor: pointer;
   display: inline-block;
