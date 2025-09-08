@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html:has(.profile-card-example) {
-  height: 100vh;
-}
-
 @font-face {
   font-family: Calinastiya;
   src: url('../assets/Calinastiya\ demo.ttf');
